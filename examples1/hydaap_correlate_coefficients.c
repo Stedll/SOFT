@@ -52,7 +52,7 @@ float* correlate (char * signalFile, char * patternFile, int bwIn, int bwOut, in
   double *patCoefR, *patCoefI ;
   fftw_complex *so3Sig, *so3Coef ;
   fftw_plan_with_nthreads(24);
-  //printf("%d", fftw_planner_nthreads());
+  printf("%d", fftw_planner_nthreads());
   
   fftw_plan p1;
   int na[2], inembed[2], onembed[2] ;
